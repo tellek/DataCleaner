@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataCleaner"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Data Cleaner" Height="720" Width="1280" Background="{x:Null}">
+    <Grid Background="White">
+
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="71" Background="#FF807A7A" Margin="0,0,0,0.429">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="38" Margin="16,69,0,0" VerticalAlignment="Top" Width="38" Source="images/DataSource.png" Opacity="0.5"/>
+            <Label x:Name="label" Content="Source" HorizontalAlignment="Left" Margin="0,97,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+            <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="38" Margin="16,140,0,0" VerticalAlignment="Top" Width="38" Source="images/DataProcess.png" Opacity="0.5"/>
+            <Label x:Name="label_Copy" Content="Process" HorizontalAlignment="Left" Margin="0,168,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+            <Image x:Name="image_Copy1" HorizontalAlignment="Left" Height="38" Margin="16,211,0,0" VerticalAlignment="Top" Width="38" Source="images/DataReview.png" Opacity="0.5"/>
+            <Label x:Name="label_Copy1" Content="Review" HorizontalAlignment="Left" Margin="0,239,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+            <Image x:Name="image_Copy2" HorizontalAlignment="Left" Height="38" Margin="16,278,0,0" VerticalAlignment="Top" Width="38" Source="images/DataChange.png" Opacity="0.5"/>
+            <Label x:Name="label_Copy2" Content="Change" HorizontalAlignment="Left" Margin="0,306,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+            <Image x:Name="image_Copy3" HorizontalAlignment="Left" Height="38" Margin="16,348,0,0" VerticalAlignment="Top" Width="38" Source="images/DataFinalize.png" Opacity="0.5"/>
+            <Label x:Name="label_Copy3" Content="Finalize" HorizontalAlignment="Left" Margin="0,376,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+            <Image x:Name="image_Copy4" HorizontalAlignment="Left" Height="38" Margin="16,418,0,0" VerticalAlignment="Top" Width="38" Source="images/Settings.png" Opacity="0.5"/>
+            <Label x:Name="label_Copy4" Content="Settings" HorizontalAlignment="Left" Margin="0,446,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+        </Grid>
     </Grid>
 </Window>
