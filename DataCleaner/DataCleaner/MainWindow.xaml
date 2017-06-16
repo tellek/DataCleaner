@@ -9,18 +9,115 @@
     <Grid Background="White">
 
         <Grid HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="71" Background="#FF807A7A" Margin="0,0,0,0.429">
-            <Image x:Name="image" HorizontalAlignment="Left" Height="38" Margin="16,69,0,0" VerticalAlignment="Top" Width="38" Source="images/DataSource.png" Opacity="0.5"/>
-            <Label x:Name="label" Content="Source" HorizontalAlignment="Left" Margin="0,97,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
-            <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="38" Margin="16,140,0,0" VerticalAlignment="Top" Width="38" Source="images/DataProcess.png" Opacity="0.5"/>
-            <Label x:Name="label_Copy" Content="Process" HorizontalAlignment="Left" Margin="0,168,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
-            <Image x:Name="image_Copy1" HorizontalAlignment="Left" Height="38" Margin="16,211,0,0" VerticalAlignment="Top" Width="38" Source="images/DataReview.png" Opacity="0.5"/>
-            <Label x:Name="label_Copy1" Content="Review" HorizontalAlignment="Left" Margin="0,239,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
-            <Image x:Name="image_Copy2" HorizontalAlignment="Left" Height="38" Margin="16,278,0,0" VerticalAlignment="Top" Width="38" Source="images/DataChange.png" Opacity="0.5"/>
-            <Label x:Name="label_Copy2" Content="Change" HorizontalAlignment="Left" Margin="0,306,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
-            <Image x:Name="image_Copy3" HorizontalAlignment="Left" Height="38" Margin="16,348,0,0" VerticalAlignment="Top" Width="38" Source="images/DataFinalize.png" Opacity="0.5"/>
-            <Label x:Name="label_Copy3" Content="Finalize" HorizontalAlignment="Left" Margin="0,376,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
-            <Image x:Name="image_Copy4" HorizontalAlignment="Left" Height="38" Margin="16,418,0,0" VerticalAlignment="Top" Width="38" Source="images/Settings.png" Opacity="0.5"/>
-            <Label x:Name="label_Copy4" Content="Settings" HorizontalAlignment="Left" Margin="0,446,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+            <Grid x:Name="grid_Home" HorizontalAlignment="Left" Height="73" Margin="0,56,0,0" VerticalAlignment="Top" Width="71">
+                <Image x:Name="image_Home" HorizontalAlignment="Left" Height="38" Margin="16,10,0,0" VerticalAlignment="Top" Width="38" Source="images/Home.png" Opacity="0.5"/>
+                <Label x:Name="label_Home" Content="Home" HorizontalAlignment="Left" Margin="0,38,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+                <Button x:Name="button_Home" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Height="73" Background="White" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="button_Home_Click" Opacity="0" MouseEnter="button_Home_MouseEnter" MouseLeave="button_Home_MouseLeave"/>
+            </Grid>
+            <Grid x:Name="grid_Source" HorizontalAlignment="Left" Height="73" Margin="0,129,0,0" VerticalAlignment="Top" Width="71">
+                <Image x:Name="image_Source" HorizontalAlignment="Left" Height="38" Margin="16,10,0,0" VerticalAlignment="Top" Width="38" Source="images/DataSource.png" Opacity="0.5"/>
+                <Label x:Name="label_Source" Content="Source" HorizontalAlignment="Left" Margin="0,38,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+                <Button x:Name="button_Source" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Height="73" Background="White" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="button_Source_Click" Opacity="0" MouseEnter="button_Source_MouseEnter" MouseLeave="button_Source_MouseLeave"/>
+            </Grid>
+            <Grid x:Name="grid_Process" HorizontalAlignment="Left" Height="73" Margin="0,203,0,0" VerticalAlignment="Top" Width="71">
+                <Image x:Name="image_Process" HorizontalAlignment="Left" Height="38" Margin="16,10,0,0" VerticalAlignment="Top" Width="38" Source="images/DataProcess.png" Opacity="0.5"/>
+                <Label x:Name="label_Process" Content="Process" HorizontalAlignment="Left" Margin="0,38,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+                <Button x:Name="button_Process" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Height="73" Background="White" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="button_Process_Click" Opacity="0" MouseEnter="button_Process_MouseEnter" MouseLeave="button_Process_MouseLeave"/>
+            </Grid>
+            <Grid x:Name="grid_Review" HorizontalAlignment="Left" Height="73" Margin="0,276,0,0" VerticalAlignment="Top" Width="71">
+                <Image x:Name="image_Review" HorizontalAlignment="Left" Height="38" Margin="16,10,0,0" VerticalAlignment="Top" Width="38" Source="images/DataReview.png" Opacity="0.5"/>
+                <Label x:Name="label_Review" Content="Review" HorizontalAlignment="Left" Margin="0,38,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+                <Button x:Name="button_Review" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Height="73" Background="White" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="button_Review_Click" Opacity="0" MouseEnter="button_Review_MouseEnter" MouseLeave="button_Review_MouseLeave"/>
+            </Grid>
+            <Grid x:Name="grid_Change" HorizontalAlignment="Left" Height="73" Margin="0,350,0,0" VerticalAlignment="Top" Width="71">
+                <Image x:Name="image_Change" HorizontalAlignment="Left" Height="38" Margin="16,10,0,0" VerticalAlignment="Top" Width="38" Source="images/DataChange.png" Opacity="0.5"/>
+                <Label x:Name="label_Change" Content="Change" HorizontalAlignment="Left" Margin="0,38,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+                <Button x:Name="button_Change" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Height="73" Background="White" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="button_Change_Click" Opacity="0" MouseEnter="button_Change_MouseEnter" MouseLeave="button_Change_MouseLeave"/>
+            </Grid>
+            <Grid x:Name="grid_Finalize" HorizontalAlignment="Left" Height="73" Margin="0,424,0,0" VerticalAlignment="Top" Width="71">
+                <Image x:Name="image_Finalize" HorizontalAlignment="Left" Height="38" Margin="16,10,0,0" VerticalAlignment="Top" Width="38" Source="images/DataFinalize.png" Opacity="0.5"/>
+                <Label x:Name="label_Finalize" Content="Finalize" HorizontalAlignment="Left" Margin="0,38,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+                <Button x:Name="button_Finalize" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Height="73" Background="White" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="button_Finalize_Click" Opacity="0" MouseEnter="button_Finalize_MouseEnter" MouseLeave="button_Finalize_MouseLeave"/>
+            </Grid>
+            <Grid x:Name="grid_Settings" HorizontalAlignment="Left" Height="73" Margin="0,498,0,0" VerticalAlignment="Top" Width="71">
+                <Image x:Name="image_Settings" HorizontalAlignment="Left" Height="38" Margin="16,10,0,0" VerticalAlignment="Top" Width="38" Source="images/Settings.png" Opacity="0.5"/>
+                <Label x:Name="label_Settings" Content="Settings" HorizontalAlignment="Left" Margin="0,38,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" Opacity="0.5"/>
+                <Button x:Name="button_Settings" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Height="73" Background="White" BorderBrush="{x:Null}" Foreground="Black" Click="button_Settings_Click" Opacity="0" BorderThickness="0" MouseEnter="button_Settings_MouseEnter" MouseLeave="button_Settings_MouseLeave"/>
+            </Grid>
         </Grid>
+        <Rectangle Fill="#FF606063" HorizontalAlignment="Left" Margin="71,0,0,0.429" VerticalAlignment="Stretch" Width="5" StrokeThickness="0" Stroke="#FF5D5858"/>
+        <Rectangle x:Name="selected_Source" Fill="White" HorizontalAlignment="Left" Height="22" Margin="68,156,0,0" Stroke="#FF5D5858" StrokeThickness="0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="135"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="selected_Process" Fill="White" HorizontalAlignment="Left" Height="22" Margin="68,229,0,0" Stroke="#FF5D5858" StrokeThickness="0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" >
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="135"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="selected_Review" Fill="White" HorizontalAlignment="Left" Height="22" Margin="68,302,0,0" Stroke="#FF5D5858" StrokeThickness="0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" >
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="135"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="selected_Change" Fill="White" HorizontalAlignment="Left" Height="22" Margin="68,376,0,0" Stroke="#FF5D5858" StrokeThickness="0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" >
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="135"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="selected_Finalize" Fill="White" HorizontalAlignment="Left" Height="22" Margin="68,449,0,0" Stroke="#FF5D5858" StrokeThickness="0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" >
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="135"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="selected_Settings" Fill="White" HorizontalAlignment="Left" Height="22" Margin="68,523,0,0" Stroke="#FF5D5858" StrokeThickness="0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" >
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="135"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="selected_Home" Fill="White" HorizontalAlignment="Left" Height="22" Margin="68,83,0,0" Stroke="#FF5D5858" StrokeThickness="0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="135"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        
+        <ScrollViewer HorizontalAlignment="Stretch" Margin="81,10,0,0" VerticalAlignment="Stretch" Background="White" HorizontalContentAlignment="Center"/>
+        <Grid x:Name="grid_NotificationArea" HorizontalAlignment="Left" Height="88" VerticalAlignment="Top" Width="1274"/>
     </Grid>
 </Window>

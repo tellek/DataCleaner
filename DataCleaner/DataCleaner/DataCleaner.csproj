@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Controls\Notifications\Alert.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,6 +66,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Notifications\Alert.xaml.cs">
+      <DependentUpon>Alert.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -102,6 +109,17 @@
     <Resource Include="images\DataReview.png" />
     <Resource Include="images\DataSource.png" />
     <Resource Include="images\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\Changes\" />
+    <Folder Include="Controls\Finalizations\" />
+    <Folder Include="Controls\Processes\" />
+    <Folder Include="Controls\Reviews\" />
+    <Folder Include="Controls\Settings\" />
+    <Folder Include="Controls\Sources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
