@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DataCleaner"
         mc:Ignorable="d"
         Title="Data Cleaner" Height="720" Width="1280" Background="{x:Null}">
-    <Grid Background="White">
+    <Grid x:Name="MainGrid" Background="White">
 
         <Grid HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="71" Background="#FF807A7A" Margin="0,0,0,0.429">
             <Grid x:Name="grid_Home" HorizontalAlignment="Left" Height="73" Margin="0,56,0,0" VerticalAlignment="Top" Width="71">
@@ -116,8 +116,11 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
+
+        <ScrollViewer x:Name="mainContent_Viewer" HorizontalAlignment="Stretch" Margin="81,10,0,0" VerticalAlignment="Stretch" Background="White">
+            <StackPanel x:Name="mainContent_StackPanel" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Background="White" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+        </ScrollViewer>
+        <Grid x:Name="grid_NotificationArea" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,0,-0.667,0"/>
         
-        <ScrollViewer HorizontalAlignment="Stretch" Margin="81,10,0,0" VerticalAlignment="Stretch" Background="White" HorizontalContentAlignment="Center"/>
-        <Grid x:Name="grid_NotificationArea" HorizontalAlignment="Left" Height="88" VerticalAlignment="Top" Width="1274"/>
     </Grid>
 </Window>

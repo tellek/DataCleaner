@@ -1,18 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DataCleaner.Controls.Notifications;
+using DataCleaner.Controls.Sources;
+using System.Diagnostics;
 
 namespace DataCleaner
 {
@@ -21,6 +13,11 @@ namespace DataCleaner
     /// </summary>
     public partial class MainWindow : Window
     {
+        // NOTIFICATION Examples
+        // grid_NotificationArea.Children.Add(new Warning("Warning message"));
+        // grid_NotificationArea.Children.Add(new Alert("Alert message"));
+        // grid_NotificationArea.Children.Add(new Error("Error message"));
+
         public MainWindow()
         {
             InitializeComponent();
@@ -42,38 +39,59 @@ namespace DataCleaner
         #region Menu Button Events
         private void button_Settings_Click(object sender, RoutedEventArgs e)
         {
-            if(selected_Settings.Visibility == Visibility.Hidden) MenuSelectionMarkerVisibility(selected_Settings);
+            if (selected_Settings.Visibility != Visibility.Hidden) return;
+            MenuSelectionMarkerVisibility(selected_Settings);
+            mainContent_StackPanel.Children.Clear();
         }
 
         private void button_Finalize_Click(object sender, RoutedEventArgs e)
         {
-            grid_NotificationArea.Children.Add(new Alert());
-            if (selected_Finalize.Visibility == Visibility.Hidden) MenuSelectionMarkerVisibility(selected_Finalize);
+            if (selected_Finalize.Visibility != Visibility.Hidden) return;
+            MenuSelectionMarkerVisibility(selected_Finalize);
+            mainContent_StackPanel.Children.Clear();
         }
 
         private void button_Change_Click(object sender, RoutedEventArgs e)
         {
-            if (selected_Change.Visibility == Visibility.Hidden) MenuSelectionMarkerVisibility(selected_Change);
+            if (selected_Change.Visibility != Visibility.Hidden) return;
+            MenuSelectionMarkerVisibility(selected_Change);
+            mainContent_StackPanel.Children.Clear();
         }
 
         private void button_Review_Click(object sender, RoutedEventArgs e)
         {
-            if (selected_Review.Visibility == Visibility.Hidden) MenuSelectionMarkerVisibility(selected_Review);
+            if (selected_Review.Visibility != Visibility.Hidden) return;
+            MenuSelectionMarkerVisibility(selected_Review);
+            mainContent_StackPanel.Children.Clear();
         }
 
         private void button_Process_Click(object sender, RoutedEventArgs e)
         {
-            if (selected_Process.Visibility == Visibility.Hidden) MenuSelectionMarkerVisibility(selected_Process);
+            if (selected_Process.Visibility != Visibility.Hidden) return;
+            MenuSelectionMarkerVisibility(selected_Process);
+            mainContent_StackPanel.Children.Clear();
         }
 
         private void button_Source_Click(object sender, RoutedEventArgs e)
         {
-            if (selected_Source.Visibility == Visibility.Hidden) MenuSelectionMarkerVisibility(selected_Source);
+            if (selected_Source.Visibility != Visibility.Hidden) return;
+            MenuSelectionMarkerVisibility(selected_Source);
+            mainContent_StackPanel.Children.Clear();
+            mainContent_StackPanel.Children.Add(new DelimitedFile());
+            mainContent_StackPanel.Children.Add(new DelimitedFile());
+            mainContent_StackPanel.Children.Add(new DelimitedFile());
+            mainContent_StackPanel.Children.Add(new DelimitedFile());
+            mainContent_StackPanel.Children.Add(new DelimitedFile());
+            mainContent_StackPanel.Children.Add(new DelimitedFile());
+            mainContent_StackPanel.Children.Add(new DelimitedFile());
+            mainContent_StackPanel.Children.Add(new DelimitedFile());
         }
 
         private void button_Home_Click(object sender, RoutedEventArgs e)
         {
-            if (selected_Home.Visibility == Visibility.Hidden) MenuSelectionMarkerVisibility(selected_Home);
+            if (selected_Home.Visibility != Visibility.Hidden) return;
+            MenuSelectionMarkerVisibility(selected_Home);
+            mainContent_StackPanel.Children.Clear();
         }
 
         private void button_Settings_MouseEnter(object sender, MouseEventArgs e)

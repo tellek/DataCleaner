@@ -4,12 +4,12 @@ using System.Windows.Controls;
 
 namespace DataCleaner.Controls.Notifications
 {
-    public partial class Alert : UserControl
+    public partial class Error : UserControl
     {
-        public Alert(string alertText)
+        public Error(string errorText)
         {
             InitializeComponent();
-            textBlock.Text = alertText;
+            textBlock.Text = errorText;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
